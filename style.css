@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4757;
+  transform: scale(1.05);
+}
+
+#options button {
+  display: block;
+  width: 100%;
+}
+
+.progress-bar {
+  background: rgba(255,255,255,0.2);
+  height: 8px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #00ffcc;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #ff6b6b;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+}

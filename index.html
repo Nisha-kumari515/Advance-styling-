@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Interactive Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🚀 Advanced Styling & JavaScript</h1>
+</header>
+
+<div class="container">
+
+  
+  <div class="card quiz-card">
+    <h2>Interactive Quiz</h2>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <p id="question"></p>
+    <div id="options"></div>
+    <button id="nextBtn">Next</button>
+    <p id="score"></p>
+  </div>
+
+
+  <div class="card carousel-card">
+    <h2>Image Carousel</h2>
+    <div class="carousel">
+      <img id="carousel-img" src="https://picsum.photos/id/1015/600/400">
+    </div>
+    <div class="carousel-buttons">
+      <button onclick="prevImage()">⟨</button>
+      <button onclick="nextImage()">⟩</button>
+    </div>
+  </div>
+
+  <div class="card api-card">
+    <h2>Random Joke (API)</h2>
+    <button onclick="getJoke()">Get Joke</button>
+    <div class="loader" id="loader"></div>
+    <p id="joke"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
